@@ -24,29 +24,47 @@ export default function PricingPage() {
     <div>
       <Modal isOpen={modalOpen}>
         <Input label="Email" placeholder="Enter your email" />
+        <Button
+          color="secondary"
+          radius="full"
+          onPress={() => {
+            thisDoesNothingToast();
+          }}
+        >
+          Submit!
+        </Button>
       </Modal>
 
-      <h1 className={title()}>Pricing</h1>
+      <h1 className={title()}>All about GIRLS FASHION!!</h1>
 
-      <p>Pricing? Boring!</p>
+      <p>
+        Here are some of my suggestions on how to match your clothes based on
+        your mood of the day:
+      </p>
 
       <section className="mt-20">
-        <h2 className="text-center text-4xl font-bold">Example Plans</h2>
+        <h2 className="text-center text-4xl font-bold">
+          Example Clothes Matching
+        </h2>
         {/* <Input placeholder="Enter your email" label="Email" /> */}
         <div className="flex justify-center gap-8 mt-20">
           {/* plan 1 */}
           <Card className="p-6 w-1/3">
             <CardHeader>
               <div className="text-3xl text-center w-full font-extrabold text-primary">
-                $29.99 <span className="text-sm">/mo</span>
+                Blue <span className="text-sm">set</span>
               </div>
             </CardHeader>
             <CardBody>
               <ul className="list-disc pl-5 text-xl">
-                <li>1,000 monthly orders</li>
+                {/* <li>1,000 monthly orders</li>
                 <li>5,000 customer limit</li>
                 <li>Manual bookkeeping and invoices</li>
-                <li>Standard shipping</li>
+                <li>Standard shipping</li> */}
+                <img
+                  alt="Blue set"
+                  src="https://img.ltwebstatic.com/v4/j/pi/2025/09/10/e6/17575059025a67820eb1422804568e27650402ee8a_thumbnail_405x552_thumbnail_720x.jpg"
+                />
               </ul>
             </CardBody>
             <CardFooter className="justify-center">
@@ -66,15 +84,15 @@ export default function PricingPage() {
           <Card className="p-6 w-1/3">
             <CardHeader>
               <div className="text-3xl text-center w-full font-extrabold text-secondary">
-                $59.99 <span className="text-sm">/mo</span>
+                Red <span className="text-sm">set</span>
               </div>
             </CardHeader>
             <CardBody>
               <ul className="list-disc pl-5 text-xl">
-                <li>Unlimited monthly orders</li>
-                <li>100,000 customer limit</li>
-                <li>AI powered bookkeeping and invoices</li>
-                <li>Standard + Express shipping</li>
+                <img
+                  alt="Red set"
+                  src="https://img.ltwebstatic.com/v4/j/spmp/2026/01/20/b5/17688755811e07f995aad4d1f2fddd19e3f9e533fc_thumbnail_750x999.jpg"
+                />
               </ul>
             </CardBody>
             <CardFooter className="justify-center">
@@ -94,15 +112,15 @@ export default function PricingPage() {
           <Card className="p-6 w-1/3">
             <CardHeader>
               <div className="text-3xl text-center w-full font-extrabold text-success">
-                Custom
+                Green <span className="text-sm">set</span>
               </div>
             </CardHeader>
             <CardBody>
               <ul className="list-disc pl-5 text-xl">
-                <li>Unlimited monthly orders</li>
-                <li>Unlimited customers</li>
-                <li>Custom shipping</li>
-                <li>AI tools</li>
+                <img
+                  alt="Green set"
+                  src="https://img.ltwebstatic.com/v4/j/pi/2025/10/08/9d/1759938629835854f3f98bb810e1c0cfe2bc7793dc_thumbnail_750x999.jpg"
+                />
               </ul>
             </CardBody>
             <CardFooter className="justify-center">
@@ -113,7 +131,7 @@ export default function PricingPage() {
                   thisDoesNothingToast();
                 }}
               >
-                Contact Us
+                Sign Up
               </Button>
             </CardFooter>
           </Card>
@@ -121,17 +139,15 @@ export default function PricingPage() {
       </section>
 
       <section className="my-40">
-        <h2 className="text-center text-4xl font-bold">FAQ</h2>
+        <h2 className="text-center text-4xl font-bold">Fashion humor</h2>
         <Accordion>
-          <AccordionItem key={1} title="Why time machines?">
-            Because noboody else sells them!
+          <AccordionItem key={1} title="What kind of dress can’t be worn?">
+            Address AHA!!
           </AccordionItem>
-          <AccordionItem
-            key={2}
-            title="How many time machines do we sell per year?"
-          >
-            According to our 2063 statistics, we sold roughly 4800 time
-            machines.
+          <AccordionItem key={2} title="Want more? Click in!">
+            Before you criticize someone, you should walk a mile in their shoes.
+            That way, when you do criticize them, you are a mile away and they
+            have no shoes!
           </AccordionItem>
         </Accordion>
       </section>

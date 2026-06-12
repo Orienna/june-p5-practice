@@ -12,6 +12,7 @@ import {
 } from "@heroui/navbar";
 import { Link } from "@heroui/link";
 import NextLink from "next/link";
+import { Image } from "@heroui/image";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -29,7 +30,11 @@ export const Navbar = () => {
       <NavbarContent justify="start">
         <NavbarBrand>
           <NextLink className="text-sm font-semibold" href="/">
-            logo
+            <Image
+              alt="logo"
+              src="https://copilot.microsoft.com/th/id/BCO.cf9dff95-f073-4366-a014-0945b57b04d0.png"
+              width={70}
+            />
           </NextLink>
         </NavbarBrand>
       </NavbarContent>

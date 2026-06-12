@@ -1,3 +1,7 @@
+"use client";
+
+import { Avatar } from "@heroui/react";
+
 import ConfettiButton from "@/components/confettiButton";
 import { title } from "@/components/primitives";
 
@@ -10,6 +14,11 @@ export default function DocsPage() {
         <span className="text-2xl mr-6">WOW thats a lot of celebrations!</span>{" "}
         <span className="text-xs">Especially for a docs page.</span>
       </div>
+
+      <Avatar
+        alt="Blue"
+        src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg"
+      />
 
       <div className="flex gap-4">
         <ConfettiButton />
